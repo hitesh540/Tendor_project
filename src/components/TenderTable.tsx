@@ -4,7 +4,7 @@ import TenderDetails from "./TenderDetails";
 
 const TenderTable = () => {
   const [tenders, setTenders] = useState<any[]>([]);
-  const [selectedTenderId, setSelectedTenderId] = useState<number | null>(null);
+  // const [selectedTenderId, setSelectedTenderId] = useState<number | null>(null);
   const [selectedTender, setSelectedTender] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -25,7 +25,7 @@ const TenderTable = () => {
   }, []);
 
   const handleRowClick = async (id: number) => {
-    setSelectedTenderId(id);
+    // setSelectedTenderId(id);
     setModalOpen(true);
     setDetailsLoading(true);
 
@@ -41,7 +41,7 @@ const TenderTable = () => {
 
   const closeModal = () => {
     setModalOpen(false);
-    setSelectedTenderId(null);
+    // setSelectedTenderId(null);
     setSelectedTender(null);
   };
 
