@@ -1,9 +1,8 @@
 import axios from "axios";
 
-//const isProd = import.meta.env.PROD;
-
+// Axios instance for potential future reuse
 const api = axios.create({
-  baseURL: "https://tendor-project-l7t2.vercel.app/tenders.guru/api/es",
+  baseURL: "/api",
   headers: {
     Accept: "application/json",
   },
