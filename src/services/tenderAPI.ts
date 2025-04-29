@@ -1,11 +1,15 @@
 import axios from "axios";
 
 // Axios instance for potential future reuse
+// const api = axios.create({
+//   baseURL: "https://tenders.guru/api/es",
+//   headers: {
+//     Accept: "application/json",
+//   },
+// });
+
 const api = axios.create({
-  baseURL: "https://tenders.guru/api/es",
-  headers: {
-    Accept: "application/json",
-  },
+  baseURL: "https://tendor-project-l7t2.vercel.app/https://tenders.guru/api/es",
 });
 
 export const fetchTenders = async () => {
