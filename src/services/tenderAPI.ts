@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Axios instance for potential future reuse
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: "https://tenders.guru/api/es",
   headers: {
     Accept: "application/json",
   },
