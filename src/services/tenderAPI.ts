@@ -1,8 +1,9 @@
 import axios from "axios";
 
-// Axios instance for potential future reuse
+const isProd = import.meta.env.PROD;
+
 const api = axios.create({
-  baseURL: "https://tenders.guru/api/es",
+  baseURL: isProd ? "https://tenders.guru/api/es" : "/api",
   headers: {
     Accept: "application/json",
   },
