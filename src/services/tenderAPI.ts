@@ -3,7 +3,7 @@ import axios from "axios";
 //const isProd = import.meta.env.PROD;
 
 const api = axios.create({
-  baseURL: "https://tendor-project-l7t2.vercel.app/api",
+  baseURL: "https://tendor-project-l7t2.vercel.app/tenders.guru/api/es",
   headers: {
     Accept: "application/json",
   },
